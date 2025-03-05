@@ -1,0 +1,15 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+table {
+  border: 1px #000 solid;
+  color: #fff;
+  background: #57c4ff;
+}
+
+table tr,
+th,
+td {
+  border: 1px #000 solid;
+}
