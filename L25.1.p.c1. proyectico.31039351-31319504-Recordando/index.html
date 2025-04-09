@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linea CSS :(-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Recordando Proyecto</title>
+  </head>
+  <body>
+    <section id="formTienda">
+      <h1>RECORDANDO</h1>
+      <table id="formTabla">
+        <tr>
+          <th>Codigo</th>
+          <th>Costo Base</th>
+          <th>Tipo</th>
+          <th>HD</th>
+          <th>Precio</th>
+        </tr>
+      </table>
+      <!-- Requerimientos -->
+      <h5>Total Vendido: <span id="formTotalVendido">?</span></h5>
+      <h5>N° Fotos Digitales: <span id="formNumFotDig">?</span></h5>
+      <h5>Subtotal Fotos Digitales: <span id="formStFotDig">?</span></h5>
+      <h5>
+        Promedio Fotos Digitales Vendidas:
+        <span id="formPromFDigVendidas">?</span>
+      </h5>
+      <button id="nuevaFot">Agregar Promo Fotografia</button>
+      <button id="nuevoVid">Agregar Promo Video</button>
+    </section>
+    <section id="formPFotografia">
+      <div>
+        <input type="number" id="codigoF" placeholder="Codigo" />
+        <input type="number" id="costoBaseF" placeholder="Costo Base" />
+        <label for="tipoF">Tipo</label>
+        <select name="tipo" id="tipoF">
+          <option value="D">Digital</option>
+          <option value="I">Impresa</option>
+        </select>
+        <button id="agregarFot">Agregar Fotografia</button>
+      </div>
+    </section>
+    <section id="formPVideo">
+      <div>
+        <input type="number" id="codigoV" placeholder="Codigo" />
+        <input type="number" id="costoBaseV" placeholder="Costo Base" />
+        <label for="hdV">High Definition:</label>
+        <select name="hd" id="hdV">
+          <option value="SI">SI</option>
+          <option value="NO">NO</option>
+        </select>
+        <button id="agregarVid">Agregar Video</button>
+      </div>
+    </section>
+    <script type="module">
+      import Index from './js/Cl_Index.js'
+      new Index()
+    </script>
+  </body>
+</html>

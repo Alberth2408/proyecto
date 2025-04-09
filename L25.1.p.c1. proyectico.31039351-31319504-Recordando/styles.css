@@ -1,0 +1,40 @@
+/*Comentar: CTRL + K + C*/
+body {
+  font-family: Verdana;
+}
+
+table,
+th,
+td {
+  border: 1px solid #7e06c4;
+  text-align: center;
+}
+
+/*Estilos :(*/
+
+button {
+  background: #7e06c4;
+  color: #fff;
+  border: 0;
+  padding: 8px 6px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #420367;
+  transition: 0.3s;
+}
+
+button:active {
+  background: #c45eff;
+}
+
+/*Linea de estilos dentro del formulario de envio de cada modelo*/
+
+#formPFotografia #formPVideo,
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 180px;
+}
